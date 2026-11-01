@@ -1,5 +1,7 @@
+
 print("ПРИВЕТ! ЭТО СЛОВАРЬ МЕМОВ!")
 print("Введи 5 слов и узнай их значение!")
+print("-------------------------")
 
 meme_dict = {
     "КРИНЖ": "Что-то очень странное или стыдное",
@@ -20,34 +22,12 @@ meme_dict = {
     "КРАШ": "Человек, который тебе нравится"
 }
 
-word = input("1. Введи слово: ")
-if word in meme_dict:
-    print(meme_dict[word])
-else:
-    print("Слова нет в словаре")
+for i in range(5):
+    word = input("Введи слово: ")
 
-word = input("2. Введи слово: ")
-if word in meme_dict:
-    print(meme_dict[word])
-else:
-    print("Слова нет в словаре")
-
-word = input("3. Введи слово: ")
-if word in meme_dict:
-    print(meme_dict[word])
-else:
-    print("Слова нет в словаре")
-
-word = input("4. Введи слово: ")
-if word in meme_dict:
-    print(meme_dict[word])
-else:
-    print("Слова нет в словаре")
-
-word = input("5. Введи слово: ")
-if word in meme_dict:
-    print(meme_dict[word])
-else:
-    print("Слова нет в словаре")
+    if word in meme_dict:
+        print("Значение:", meme_dict[word])
+    else:
+        print("Слова нет в словаре!")
 
 print("Спасибо за игру!")
